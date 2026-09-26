@@ -1,8 +1,13 @@
 from __future__ import annotations
-
 import os
 from dataclasses import dataclass
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+max_dimension: int = _int_env("OCR_MAX_DIMENSION", 0, minimum=0)
+tile_rows: int = _int_env("OCR_TILE_ROWS", 0, minimum=0)
 
 def _int_env(name: str, default: int, minimum: int = 1) -> int:
     value = int(os.getenv(name, default))
