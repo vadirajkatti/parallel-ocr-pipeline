@@ -1,4 +1,4 @@
-# Modern Res5 — Parallel OCR Pipeline
+# Modern Parallel OCR Pipeline
 
 This is a clean-room modernization of the core architecture in the original
 Res5: convert/prepare a scanned document image, divide the work into OCR
